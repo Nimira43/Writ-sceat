@@ -7,7 +7,7 @@
 
 :root {
   --title-font: 'Gabriela', serif;
-  --logo-font: 'Rochester', serif;
+  --logo-font: 'Rochester', cursive;
   --main: #069706;
   --main-dark: #055d05;
   --main-light: #7ae07a;
@@ -19,6 +19,8 @@
   --grey-3: #aaa;
   --grey-4: #ccc;
   --grey-5: #eee;
+  --closed: #f43131;
+  --border-radius: 0.1875rem;
   --transitioning: all 0.5s ease-in-out;
 }
 
@@ -28,4 +30,192 @@
 
 .title-font {
   font-family: var(--title-font);
+}
+
+html {
+  font-size: 16px;
+}
+
+.app {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--grey-5);
+  color: var(--grey-1);
+  padding: 0.625rem 1.25rem;
+}
+
+.item .icon {
+  color: var(--main);
+  margin-right: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item span {
+  font-weight: 400;
+}
+
+.brand {
+  font-size: 1.5rem;
+}
+
+.contact {
+  font-size: 1rem;
+}
+
+.title-section {
+  text-align: center;
+  margin: 1.25rem 0;
+}
+
+.title-section h1 {
+  font-size: 1.75rem;
+  color: var(--main);
+  display: inline-block;
+  padding: 0.625rem;
+  margin: 0;
+}
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.property-card {
+  border: 0.0625rem solid var(--grey-4);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  margin: 1.25rem;
+  overflow: hidden;
+  width: 18.75rem;
+}
+
+.property-info {
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--light);
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  padding: 0.3125rem 0.625rem;
+  border-radius: var(--border-radius);
+}
+
+.property-attribute {
+  text-align: center;
+  padding: 0 0.625rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* p {
+  margin: 0.3125rem;   
+} */
+
+.property-image {
+  width: 100%;
+  height: 12.5rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.icon-with-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0 0.25rem;
+}
+
+.banner {
+  background-color: var(--grey-5);
+  color: var(--grey-1);
+  padding: 0.3125rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 1rem;
+  left: -1.5625rem;
+}
+
+.property-type-label {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  background-color: var(--main-light);
+  color: var(--grey-1);
+  padding: 0.3125rem 0.625rem;
+  border-radius: var(--border-radius);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--grey-5);
+  color: var(--grey-1);
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .icon {
+  margin-right: 0.5rem;
+  color: var(--main);
+}
+
+.footer .status {
+  font-weight: 400;
+}
+
+.footer .status.open {
+  color: var(--main);
+}
+
+.footer .status.closed {
+  color: var(--closed);
+}
+
+@media (max-width: 800px) {
+  .app {
+    margin-top: 10rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    margin-bottom: 0.5rem;
+  }
 }
