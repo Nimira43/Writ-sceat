@@ -1,7 +1,7 @@
 const Title = () => {
   return (
-    <div>
-      Title    
+    <div className='title-section'>
+      <h1>Properties for Rent</h1>   
     </div>
   )
 }
