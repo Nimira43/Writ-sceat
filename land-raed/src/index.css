@@ -93,7 +93,7 @@ html {
 
 .title-section h1 {
   font-size: 1.75rem;
-  color: var(--main);
+  color: var(--main-dark);
   display: inline-block;
   padding: 0.625rem;
   margin: 0;
@@ -187,7 +187,7 @@ html {
   z-index: 10;
   background-color: var(--grey-5);
   color: var(--grey-1);
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   padding: 0.625rem;
 }
@@ -200,7 +200,6 @@ html {
 
 .footer .icon {
   margin-right: 0.5rem;
-  color: var(--main);
 }
 
 .footer .status {
@@ -208,11 +207,15 @@ html {
 }
 
 .footer .status.open {
-  color: var(--main);
+  color: var(--main-dark);
 }
 
 .footer .status.closed {
   color: var(--closed);
+}
+
+.footer-contact {
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 800px) {
