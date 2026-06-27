@@ -1,7 +1,14 @@
-const PropertyList = () => {
+import Property from './Property'
+
+const PropertyList = ({ properties }) => {
   return (
-    <div>
-      Property List      
+    <div className='property-list'>
+      {properties.map((property) => (
+        <Property
+          key={property.id}
+          {...property}
+        />
+      ))}      
     </div>
   )
 }

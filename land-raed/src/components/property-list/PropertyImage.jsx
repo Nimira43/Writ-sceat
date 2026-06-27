@@ -1,7 +1,12 @@
-const PropertyImage = () => {
+const PropertyImage = ({ image, children}) => {
   return (
-    <div>
-      Property Image
+    <div
+      className='property-image'
+      style={{
+        backgroundImage: `url(${image})`
+      }}
+    >
+      {children}
     </div>
   )
 }
