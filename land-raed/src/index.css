@@ -116,6 +116,19 @@ html {
   width: 18.75rem;
 }
 
+.property-type-label {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  background-color: var(--main-dark);
+  color: var(--light);
+  padding: 0.3125rem 0.625rem;
+  border-radius: var(--border-radius);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .property-info {
   background: rgba(0, 0, 0, 0.7);
   color: var(--light);
@@ -164,19 +177,6 @@ html {
   transform: rotate(-45deg);
   top: 1rem;
   left: -1.5625rem;
-}
-
-.property-type-label {
-  position: absolute;
-  top: 0.625rem;
-  right: 0.625rem;
-  background-color: var(--main-light);
-  color: var(--grey-1);
-  padding: 0.3125rem 0.625rem;
-  border-radius: var(--border-radius);
-  font-size: 0.75rem;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
 .footer {

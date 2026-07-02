@@ -1,4 +1,5 @@
 import PropertyImage from './PropertyImage'
+import PropertyTypeLabel from './PropertyTypeLabel'
 
 const Property = ({
   image,
@@ -19,7 +20,7 @@ const Property = ({
       }}
     >
       <PropertyImage image={image}>
-        Property Details
+        <PropertyTypeLabel type={type} />
       </PropertyImage>
       <div>Property Attributes</div>
     </div>

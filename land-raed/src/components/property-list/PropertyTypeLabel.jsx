@@ -1,7 +1,7 @@
-const PropertyTypeLabel = () => {
+const PropertyTypeLabel = ({ type }) => {
   return (
-    <div>
-      Property Type Label
+    <div className='property-type-label'>
+     {type} 
     </div>
   )
 }
