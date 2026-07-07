@@ -1,7 +1,7 @@
 const PropertyBanner = () => {
   return (
-    <div>
-      Property Banner      
+    <div className='banner'>
+      Let Agreed
     </div>
   )
 }

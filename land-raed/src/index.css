@@ -130,9 +130,10 @@ html {
 }
 
 .property-info {
-  background: rgba(0, 0, 0, 0.7);
+  background-color: var(--main-dark);
   color: var(--light);
   font-size: 0.875rem;
+  font-weight: bold;
   position: absolute;
   bottom: 0.625rem;
   right: 0.625rem;
@@ -145,11 +146,8 @@ html {
   padding: 0 0.625rem;
   font-size: 1rem;
   line-height: 1.4;
+  margin: 0.3125rem; 
 }
-
-/* p {
-  margin: 0.3125rem;   
-} */
 
 .property-image {
   width: 100%;
@@ -167,8 +165,8 @@ html {
 }
 
 .banner {
-  background-color: var(--grey-5);
-  color: var(--grey-1);
+  background-color: var(--main-dark);
+  color: var(--support);
   padding: 0.3125rem 1.25rem;
   font-size: 0.875rem;
   font-weight: 400;

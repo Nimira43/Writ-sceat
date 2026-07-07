@@ -1,8 +1,8 @@
-const IconWithText = () => {
+const IconWithText = ({ Icon, text}) => {
   return (
-    <div>
-      Icon with Text 
-    </div>
+    <span className='icon-with-text'>
+      <Icon size={14} />{' '}{text}
+    </span>
   )
 }
 

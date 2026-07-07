@@ -1,8 +1,8 @@
-const PropertyAttribute = () => {
+const PropertyAttribute = ({ text }) => {
   return (
-    <div>
-      PropertyAttribute
-    </div>
+    <p className='property-attribute'>
+      {text}
+    </p>
   )
 }
 
