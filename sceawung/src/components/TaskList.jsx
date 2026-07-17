@@ -1,21 +1,16 @@
-import EditTaskForm from './EditTaskForm'
 import TaskItem from './TaskItem'
 
-const TaskList = () => {
+const TaskList = ({ tasks }) => {
   return (
     <ul>
-      <li>
-        <TaskItem />
-        <EditTaskForm />
-      </li>     
-      <li>
-        <TaskItem />
-        <EditTaskForm />
-      </li>     
-      <li>
-        <TaskItem />
-        <EditTaskForm />
-      </li>     
+      {tasks.map((task) => (
+        <li
+          key={task.id}
+          className='task-list-item'
+        >
+          <TaskItem task={task} />
+        </li>
+      ))}     
     </ul>
   )
 }
