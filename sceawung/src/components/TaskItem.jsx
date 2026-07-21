@@ -5,9 +5,10 @@ const TaskItem = ({ task }) => {
     <>
       <div className='task-item-wrapper'>
         <input
-          className='task-item-checked'
+          className='checkbox'
           type='checkbox'
           checked={task.done}
+         
         />
         <span
           className='task-item'
@@ -22,11 +23,11 @@ const TaskItem = ({ task }) => {
         </span>
       </div> 
       <div className='task-item-button-wrapper'>
-        <button className='btn outline-btn'>
-          <VscEdit className='icon-dark' />
+        <button className='plain-btn'>
+          <VscEdit />
         </button>
-        <button className='btn solid-btn'>
-          <VscTrash classNam='icon-light' />
+        <button className='plain-btn'>
+          <VscTrash />
         </button>
       </div>
     </>
