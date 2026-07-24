@@ -8,6 +8,18 @@ const App = () => {
   const [tasks, setTasks] = useState(mockData)
   const [showOnlyIncomplete, setShowOnlyIncomplete] = useState(false)
 
+  const addTask = (newTask) => {
+    const updatedTasks = [...tasks, newTask]
+    setTasks(updatedTasks)
+  }
+
+  const toggleTaskDone = (id) => {
+    const updatedTasks = tasks.map((task) =>
+      task.id === id ? {...task, done: !task.done} : task
+    )
+    setTasks(updatedTasks)
+  }
+
   const sortTasks = () => {
     const sortedTasks = [...tasks]
       .sort((a, b) => a.priority - b.priority)
@@ -19,7 +31,7 @@ const App = () => {
       <h1 className='logo-font'>
         scēawung
       </h1>
-      <TaskForm />
+      <TaskForm addTask={addTask}/>
       <TaskControls
         showOnlyIncomplete={showOnlyIncomplete}
         setShowOnlyIncomplete={setShowOnlyIncomplete}
@@ -28,6 +40,7 @@ const App = () => {
       <TaskList
         tasks={tasks}
         showOnlyIncomplete={showOnlyIncomplete}
+        toggleTaskDone={toggleTaskDone}
       />
     </div>
   )

@@ -2,7 +2,8 @@ import TaskItem from './TaskItem'
 
 const TaskList = ({
   tasks,
-  showOnlyIncomplete
+  showOnlyIncomplete,
+  toggleTaskDone
 }) => {
   return (
     <ul>
@@ -13,7 +14,10 @@ const TaskList = ({
             key={task.id}
             className='task-list-item'
           >
-            <TaskItem task={task} />
+            <TaskItem
+              task={task}
+              toggleTaskDone={toggleTaskDone}
+            />
           </li>
         ))
       }     

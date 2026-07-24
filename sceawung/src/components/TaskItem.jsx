@@ -1,12 +1,13 @@
 import { VscEdit, VscTrash } from 'react-icons/vsc'
 
-const TaskItem = ({ task }) => {
+const TaskItem = ({ task, toggleTaskDone }) => {
   return (
     <>
       <div className='task-item-wrapper'>
         <input
           className='checkbox'
           type='checkbox'
+          onChange={() => toggleTaskDone(task.id)}
           checked={task.done}
          
         />
